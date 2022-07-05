@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ScrollToBottom from 'react-scroll-to-bottom'
+import ScrollToBottom from 'react-scroll-to-bottom';
 
 function Chat({socket, username, room}) {
     const [currentMessage, setCurrentMessage] = useState('')
@@ -22,7 +22,6 @@ function Chat({socket, username, room}) {
 
     useEffect(() => {
         socket.on('receive_message', (data) => {
-            console.log(data)
             setMessageList((list) => [...list, data])
         })
 
@@ -34,7 +33,10 @@ function Chat({socket, username, room}) {
     return (
         <div className="chat-window">
             <div className="chat-header">
-                <p>Live Chat</p>
+                    <p>Live Chat</p>
+                    <div className="side-bar">
+                        <p>Room ID: {room}</p>
+                    </div>
             </div>
             <div className="chat-body">
                 <ScrollToBottom className="message-container">
@@ -45,8 +47,8 @@ function Chat({socket, username, room}) {
                                     <p>{messageContent.message}</p>
                                 </div>
                                 <div className="message-meta">
-                                <p id="time">{messageContent.time}</p>
-                                <p id="author">{messageContent.author}</p>
+                                    <p id="time">{messageContent.time}</p>
+                                    <p id="author">{messageContent.author}</p>
                                 </div>
                             </div>
                         </div>
