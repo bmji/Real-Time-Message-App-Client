@@ -1,72 +1,21 @@
-# Getting Started with Create React App
+# Project #4: Messaging App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Idea - Base plan
+I have decided to use React for the front-end and Express for the back-end for this project. The main idea was to allow people to communicate with each other within an exclusive room. There would be a main location of some sort which would have several other private rooms that a user can enter by clicking into that room. Upon entering the room, the user would see a massaging box along with other icons that would enable video and voice chat. It would also display the members that are currently in the selected room as well as the room that they had chosen.
 
-## Available Scripts
+## Project After Review
+In order to allow users to communicate online, I was required to utilise Socket.io, an event-driven library for real-time web application. I was not able to implement a main room that consisted of multiple other rooms, although I was able to allow multiple users to make a room by creating an ID. My idea of allowing video chat was also scrapped due to the time-limitation. The project ended up being a lot more simple that I was hoping, but I am very happy that I managed to get the main function working; allowing multiple users to chat to one another.
 
-In the project directory, you can run:
+## Biggest Struggle
+The biggest struggle I faced was having to learn Socket.io. Because Socket.io was so new to me, it was hard for me to connect that and what I had already knew. I was required to watch multiple videos and read the documentation, which took a lot longer than I was hoping. I kept running into issues where the connection between the client side and server side wasn't recognising each other and being able to get my project working took a lot of trial and error.
 
-### `npm start`
+## Unsolved Issues
+One thing I have noticed and was not able to fix was that if two users joined with the same name, they would be recognised as the same person in the chat.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Cool Tech
+There is not much to my project as it is a very simple messaging app, but from my own opinion, I believe that Socket.io is one of the coolest (and only) tech that I have implemented into my project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Link
+Feel free to use my React app to communicate with other members that use the same network!
 
 Link to my app: <a href="https://messenger-app-alicia.herokuapp.com/">Here</a>
